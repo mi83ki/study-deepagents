@@ -1,0 +1,18 @@
+[project]
+name = "study-deepagents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "deepagents>=0.6.6",
+    "python-dotenv>=1.2.2",
+    "tavily-python>=0.7.24",
+]
+
+[project.scripts]
+study-deepagents = "study_deepagents:main"
+
+[build-system]
+requires = ["uv_build>=0.10.7,<0.11.0"]
+build-backend = "uv_build"
