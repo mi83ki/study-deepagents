@@ -1,0 +1,683 @@
+[
+  {
+    "type": "event",
+    "method": "values",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118719695,
+      "data": {
+        "messages": [
+          {
+            "type": "HumanMessage",
+            "content": "What's the weather in Boston?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "id": "c29a9356-83f6-4064-8529-7f3643c71443"
+          }
+        ]
+      },
+      "interrupts": []
+    },
+    "seq": 1
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118719947,
+      "data": [
+        {
+          "event": "message-start",
+          "role": "ai",
+          "id": "lc_run--019e7758-0cd1-76b0-bd84-b07899bcd5d6",
+          "metadata": {
+            "provider": "openai"
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-0cd1-76b0-bd84-b07899bcd5d6"
+        }
+      ]
+    },
+    "seq": 2
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720535,
+      "data": [
+        {
+          "event": "content-block-start",
+          "index": 0,
+          "content": {
+            "type": "text",
+            "text": ""
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-0cd1-76b0-bd84-b07899bcd5d6"
+        }
+      ]
+    },
+    "seq": 3
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720535,
+      "data": [
+        {
+          "event": "content-block-delta",
+          "index": 0,
+          "delta": {
+            "type": "text-delta",
+            "text": "\n\n"
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-0cd1-76b0-bd84-b07899bcd5d6"
+        }
+      ]
+    },
+    "seq": 4
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720750,
+      "data": [
+        {
+          "event": "content-block-delta",
+          "index": 0,
+          "delta": {
+            "type": "block-delta",
+            "fields": {
+              "type": "tool_call_chunk",
+              "id": "981191728",
+              "name": "call_weather",
+              "args": "",
+              "index": 0
+            }
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-0cd1-76b0-bd84-b07899bcd5d6"
+        }
+      ]
+    },
+    "seq": 5
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720961,
+      "data": [
+        {
+          "event": "content-block-delta",
+          "index": 0,
+          "delta": {
+            "type": "block-delta",
+            "fields": {
+              "type": "tool_call_chunk",
+              "id": "981191728",
+              "name": "call_weather",
+              "args": "{\"query\":\"Boston\"}",
+              "index": 0
+            }
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-0cd1-76b0-bd84-b07899bcd5d6"
+        }
+      ]
+    },
+    "seq": 6
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720963,
+      "data": [
+        {
+          "event": "content-block-finish",
+          "index": 0,
+          "content": {
+            "type": "tool_call",
+            "id": "981191728",
+            "name": "call_weather",
+            "args": {
+              "query": "Boston"
+            }
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-0cd1-76b0-bd84-b07899bcd5d6"
+        }
+      ]
+    },
+    "seq": 7
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720963,
+      "data": [
+        {
+          "event": "message-finish",
+          "metadata": {
+            "model_provider": "openai",
+            "finish_reason": "tool_calls",
+            "model_name": "qwen3.6-27b-i1",
+            "system_fingerprint": "qwen3.6-27b-i1"
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "checkpoint_ns": "model:6a06edf1-51b7-9ab9-d45d-1ac12739697d",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-0cd1-76b0-bd84-b07899bcd5d6"
+        }
+      ]
+    },
+    "seq": 8
+  },
+  {
+    "type": "event",
+    "method": "values",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720963,
+      "data": {
+        "messages": [
+          {
+            "type": "HumanMessage",
+            "content": "What's the weather in Boston?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "id": "c29a9356-83f6-4064-8529-7f3643c71443"
+          },
+          {
+            "type": "AIMessage",
+            "content": [
+              {
+                "type": "tool_call",
+                "id": "981191728",
+                "name": "call_weather",
+                "args": {
+                  "query": "Boston"
+                }
+              }
+            ],
+            "additional_kwargs": {},
+            "response_metadata": {
+              "model_provider": "openai",
+              "finish_reason": "tool_calls",
+              "model_name": "qwen3.6-27b-i1",
+              "system_fingerprint": "qwen3.6-27b-i1",
+              "output_version": "v1"
+            },
+            "name": "supervisor",
+            "id": "lc_run--019e7758-0cd1-76b0-bd84-b07899bcd5d6",
+            "tool_calls": [
+              {
+                "name": "call_weather",
+                "args": {
+                  "query": "Boston"
+                },
+                "id": "981191728",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": []
+          }
+        ]
+      },
+      "interrupts": []
+    },
+    "seq": 9
+  },
+  {
+    "type": "event",
+    "method": "tools",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720969,
+      "data": {
+        "event": "tool-started",
+        "tool_call_id": "981191728",
+        "tool_name": "call_weather",
+        "input": {
+          "query": "Boston"
+        }
+      }
+    },
+    "seq": 10
+  },
+  {
+    "type": "event",
+    "method": "values",
+    "params": {
+      "namespace": [
+        "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33"
+      ],
+      "timestamp": 1780118720969,
+      "data": {
+        "messages": [
+          {
+            "type": "HumanMessage",
+            "content": "Boston",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "id": "03227551-6868-4f93-b85c-b45da780be42"
+          }
+        ]
+      },
+      "interrupts": []
+    },
+    "seq": 11
+  },
+  {
+    "type": "event",
+    "method": "lifecycle",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118720969,
+      "data": {
+        "event": "started",
+        "namespace": [
+          "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33"
+        ],
+        "graph_name": "tools",
+        "trigger_call_id": "41367cf4-2a07-c9ca-3ba0-8322d8b36e33"
+      }
+    },
+    "seq": 12
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [
+        "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33"
+      ],
+      "timestamp": 1780118721354,
+      "data": [
+        {
+          "event": "message-start",
+          "role": "ai",
+          "id": "lc_run--019e7758-11c7-7eb3-9f05-c8de4a7e8c99",
+          "metadata": {
+            "provider": "openai"
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "weather_agent",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33|model:22f21b47-3603-0b68-fe77-aa66c54437b2",
+          "checkpoint_ns": "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-11c7-7eb3-9f05-c8de4a7e8c99"
+        }
+      ]
+    },
+    "seq": 13
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [
+        "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33"
+      ],
+      "timestamp": 1780118722375,
+      "data": [
+        {
+          "event": "message-finish",
+          "metadata": {
+            "model_provider": "openai",
+            "finish_reason": "stop",
+            "model_name": "qwen3.6-27b-i1",
+            "system_fingerprint": "qwen3.6-27b-i1"
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "weather_agent",
+          "langgraph_step": 1,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33|model:22f21b47-3603-0b68-fe77-aa66c54437b2",
+          "checkpoint_ns": "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-11c7-7eb3-9f05-c8de4a7e8c99"
+        }
+      ]
+    },
+    "seq": 14
+  },
+  {
+    "type": "event",
+    "method": "values",
+    "params": {
+      "namespace": [
+        "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33"
+      ],
+      "timestamp": 1780118722376,
+      "data": {
+        "messages": [
+          {
+            "type": "HumanMessage",
+            "content": "Boston",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "id": "03227551-6868-4f93-b85c-b45da780be42"
+          },
+          {
+            "type": "AIMessage",
+            "content": "",
+            "additional_kwargs": {},
+            "response_metadata": {
+              "model_provider": "openai",
+              "finish_reason": "stop",
+              "model_name": "qwen3.6-27b-i1",
+              "system_fingerprint": "qwen3.6-27b-i1",
+              "output_version": "v1"
+            },
+            "name": "weather_agent",
+            "id": "lc_run--019e7758-11c7-7eb3-9f05-c8de4a7e8c99",
+            "tool_calls": [],
+            "invalid_tool_calls": []
+          }
+        ]
+      },
+      "interrupts": []
+    },
+    "seq": 15
+  },
+  {
+    "type": "event",
+    "method": "tools",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118722376,
+      "data": {
+        "event": "tool-finished",
+        "tool_call_id": "981191728",
+        "output": {
+          "type": "ToolMessage",
+          "content": "",
+          "name": "call_weather",
+          "id": "39be2ba8-b13b-4232-8946-b16d472aea12",
+          "tool_call_id": "981191728"
+        }
+      }
+    },
+    "seq": 16
+  },
+  {
+    "type": "event",
+    "method": "lifecycle",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118722376,
+      "data": {
+        "event": "completed",
+        "namespace": [
+          "tools:41367cf4-2a07-c9ca-3ba0-8322d8b36e33"
+        ]
+      }
+    },
+    "seq": 17
+  },
+  {
+    "type": "event",
+    "method": "values",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118722376,
+      "data": {
+        "messages": [
+          {
+            "type": "HumanMessage",
+            "content": "What's the weather in Boston?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "id": "c29a9356-83f6-4064-8529-7f3643c71443"
+          },
+          {
+            "type": "AIMessage",
+            "content": [
+              {
+                "type": "tool_call",
+                "id": "981191728",
+                "name": "call_weather",
+                "args": {
+                  "query": "Boston"
+                }
+              }
+            ],
+            "additional_kwargs": {},
+            "response_metadata": {
+              "model_provider": "openai",
+              "finish_reason": "tool_calls",
+              "model_name": "qwen3.6-27b-i1",
+              "system_fingerprint": "qwen3.6-27b-i1",
+              "output_version": "v1"
+            },
+            "name": "supervisor",
+            "id": "lc_run--019e7758-0cd1-76b0-bd84-b07899bcd5d6",
+            "tool_calls": [
+              {
+                "name": "call_weather",
+                "args": {
+                  "query": "Boston"
+                },
+                "id": "981191728",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": []
+          },
+          {
+            "type": "ToolMessage",
+            "content": "",
+            "name": "call_weather",
+            "id": "39be2ba8-b13b-4232-8946-b16d472aea12",
+            "tool_call_id": "981191728"
+          }
+        ]
+      },
+      "interrupts": []
+    },
+    "seq": 18
+  },
+  {
+    "type": "event",
+    "method": "messages",
+    "params": {
+      "namespace": [],
+      "timestamp": 1780118722752,
+      "data": [
+        {
+          "event": "message-start",
+          "role": "ai",
+          "id": "lc_run--019e7758-174a-73a2-94b8-7b5e69736296",
+          "metadata": {
+            "provider": "openai"
+          }
+        },
+        {
+          "ls_integration": "langchain_chat_model",
+          "lc_agent_name": "supervisor",
+          "langgraph_step": 3,
+          "langgraph_node": "model",
+          "langgraph_triggers": [
+            "branch:to:model"
+          ],
+          "langgraph_path": [
+            "__pregel_pull",
+            "model"
+          ],
+          "langgraph_checkpoint_ns": "model:9de6f330-8503-5906-39fa-f87dd540f961",
+          "checkpoint_ns": "model:9de6f330-8503-5906-39fa-f87dd540f961",
+          "ls_provider": "openai",
+          "ls_model_name": "qwen3.6-27b-i1",
+          "ls_model_type": "chat",
+          "ls_temperature": 0.6,
+          "run_id": "019e7758-174a-73a2-94b8-7b5e69736296"
+        }
+      ]
+    },
+    "seq": 19
+  }
+]
